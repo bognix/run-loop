@@ -1,0 +1,18 @@
+<hr>
+<button {{action 'render'}}>RENDER</button>
+{{#if showB}}
+  {{component-b}}
+{{else}}
+  {{component-c}}
+{{/if}}
+
+<hr>
+<button {{action 'propertySet'}}>SET NAME</button>
+<div>{{greetings}}</div>
+
+<hr>
+<button {{action 'propertySetTwice'}}>SET NAME TWICE</button>
+<div>{{greetings}}</div>
+
+<hr>
+<button {{action 'transition'}}>GO AWAY</button>
